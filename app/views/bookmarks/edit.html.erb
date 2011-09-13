@@ -1,0 +1,44 @@
+<div id="body">
+
+<div id="body-left">
+
+<br>
+<div id="body">
+
+<div id="body-left">
+
+hello
+
+
+
+
+
+<br>
+<%= form_for(:bookmark,:url=>{:controller=>"bookmarks",:action=>"update"}) do |f|%>
+
+<%= f.label :title%>
+<%= f.text_field :title%><br><br>
+<%= f.label :description%>
+<%= f.text_field :description%><br><br>
+<%= f.submit "Add Bookmark"%><br>
+<% end %>
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+
+</div>
+
+
+</div>
+
+<%= link_to 'Show', @bookmark %> |
+<%= link_to 'Back', bookmarks_path %>
+
+</div></div>

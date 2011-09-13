@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookmarks</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<div id='header'>
+  <div id='header-body'>
+header
+  </div>
+</div>
+
+<%= yield %>
+<div id='footer'>
+  <div id='footer-body'>
+footer
+  </div>
+</div> 
+
+
+</body>
+</html>

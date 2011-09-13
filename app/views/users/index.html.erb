@@ -1,0 +1,25 @@
+<div id="body">
+
+<div id="body-left">
+
+
+<table border=1 >
+<tr><td><b>Title</b></td><td><b>Description</b></td><td><b>Edit</b></td><td><b>Show</b></td><td><b>Destroy</b></td></tr>
+<br>
+<% @bookmarks.each do |b|%>
+<tr><td><%= b.title %></td>
+<td><%= b.description %></td>
+<td><%= link_to "Edit",edit_bookmark_path(b) %></td>
+<td><%= link_to "Show" ,b%></td>
+<td><%= link_to 'Destroy', b, :confirm => 'Are you sure?', :method => :delete %></td></tr>
+<% end %>
+
+
+</table>
+<%= will_paginate @bookmarks %>
+
+</div>
+<div id="body-right">
+<%= render 'bookmarks/form' %>
+</div>
+</div>

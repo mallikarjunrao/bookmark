@@ -1,0 +1,30 @@
+
+
+<div id='body'><div id="body-left">
+
+
+<table border=1 >
+<tr><td><b>Title</b></td><td><b>Description</b></td></tr>
+<br>
+<% @bookmarks.each do |b|%>
+<tr><td><%= b.title %></td>&nbsp;&nbsp;
+<td><%= b.description %></td>
+
+<% end %>
+
+</table>
+<%= will_paginate @bookmarks %>
+</div>
+  <div id='body-right'>
+<% @administrators.each do |b| %>
+
+
+<%= b.username%><br><br>
+<% end %><br><br>
+
+<%= link_to "View More",administrators_path %>
+  </div>
+
+
+</div>
+

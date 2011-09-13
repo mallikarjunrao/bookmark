@@ -1,0 +1,12 @@
+.column { float: left; margin-right: 10px; }
+.span-1 { width: 30px; }
+.last { margin-right: 0; }
+#container { width: 950px; margin: 0 auto; }
+#contariner { float: left; margin-right: 10px; margin-right: 0; width: 950px; margin: 0; }
+#header { width: 950px; margin: 0 auto; }
+#header-body { float: left; margin-right: 10px; margin-right: 0; width: 950px; margin: 0; }
+#body { width: 950px; margin: 0 auto; }
+#body-left { float: left; margin-right: 10px; width: 670px; }
+#body-right { float: left; margin-right: 10px; width: 230px; }
+#footer { width: 950px; margin: 0 auto; }
+#footer-body { float: left; margin-right: 10px; margin-right: 0; width: 950px; margin: 0; } 
